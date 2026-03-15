@@ -1,6 +1,6 @@
 {
   "name": "@orchestra-mcp/editor",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Code and Markdown editor components for Orchestra MCP",
   "type": "module",
   "main": "./dist/index.js",
@@ -13,8 +13,12 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist"],
-  "publishConfig": { "access": "public" },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/orchestra-mcp/editor"
@@ -22,7 +26,9 @@
   "funding": "https://github.com/sponsors/fadymondy",
   "license": "MIT",
   "dependencies": {
-    "@orchestra-mcp/theme": "^0.2.0", "@orchestra-mcp/ui": "^0.2.0", "@orchestra-mcp/widgets": "^0.2.0",
+    "@orchestra-mcp/theme": "^1.0.0",
+    "@orchestra-mcp/ui": "^1.0.0",
+    "@orchestra-mcp/widgets": "^1.0.0",
     "@monaco-editor/react": "^4.7.0",
     "monaco-editor": "^0.52.2",
     "html-to-image": "^1.11.13"
@@ -42,5 +48,11 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "prepublishOnly": "pnpm build"
   },
-  "keywords": ["orchestra", "mcp", "react", "components", "editor"]
+  "keywords": [
+    "orchestra",
+    "mcp",
+    "react",
+    "components",
+    "editor"
+  ]
 }
